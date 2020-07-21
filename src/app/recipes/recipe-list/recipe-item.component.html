@@ -1,0 +1,20 @@
+<a cc href="#" class="list-group-item clearfix">
+  <div class="pull-left">
+    <i
+       class="glyphicon glyphicon-heart" 
+       [class.highlighted]="iLike"
+       (click)="onClick(recipe.defaultLikes)">
+    </i>
+    <span>{{recipe.defaultLikes}}</span>
+    <h4 class="list-group-item-heading">{{recipe.name | uppercase}}</h4>
+    <h6 class="list-group-item-heading">{{recipe.price | currency : 'INR'}}</h6>
+    <h6 class="list-group-item-heading">{{recipe.offerDate | date : 'dd/MM/yy'}}</h6>
+    <h6 class="list-group-item-heading">{{recipe.offerExpiryData | date : 'MM/yy'}}</h6>
+    <p class="list-group-item-text">{{recipe.description | substring}}</p>
+  </div>
+  <span class="pull-right">
+      <img class="img-responsive"
+           src="{{recipe.imagePath}}"
+           style="max-height: 50px;"/>
+  </span>
+</a>
