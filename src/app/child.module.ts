@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 import { HeaderComponent } from "./header.component";
 import { ShoppingListAddComponent } from "./shopping-list/shopping-list-add.component";
 import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
@@ -15,7 +14,8 @@ import { UsercompComponent } from './usercomp/usercomp.component';
         UsercompComponent
     ],
     imports: [
-        BrowserModule, SharedModule
+        CommonModule,
+        SharedModule
     ],
     exports: [
         HeaderComponent,

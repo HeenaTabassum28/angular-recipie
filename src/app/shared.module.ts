@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { Dropdown } from './shared/dropdown.directive';
 import { CustomSubstring } from './shared/substring.pipe';
@@ -12,7 +12,7 @@ import { ColorChanger } from './shared/colorchanger.directive';
         Dropdown
     ],
     imports: [
-        BrowserModule
+        CommonModule
     ],
     exports: [
         CustomSubstring,
